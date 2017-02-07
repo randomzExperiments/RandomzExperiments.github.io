@@ -20,19 +20,16 @@
             </div>
         </header>
         <section>
-
-
-		            	<div class="thumb">
-		            		<div class="thumb-top-bg">
-		            			<p class="thumb-heading">Salad, You So Fun</p>
-		            		</div>
-	            		    <div class="thumb-desc">
-            				    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
-                                <a href="#"><div class="button">Read More</div></a>
-                                </p>
-	            		    </div>
-                        </div>
-
+		    <div class="thumb" data-source="sample.html" >
+		    	<div class="thumb-top-bg">
+		    		<p class="thumb-heading">Salad, You So Fun</p>
+				</div>
+	    	    <div class="thumb-desc">
+    			    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
+                     <a href="#"><div class="button">Read More</div></a>
+                  </p>
+			    </div>
+             </div>
 		            	<div class="thumb">
 		            		<div class="thumb-top-bg">
 		            			<p class="thumb-heading">Salad, You So Fun</p>
@@ -91,8 +88,7 @@
         });
         $(".button-close").click(function() {
             $(".toolbar").stop().animate({"backgroundColor":"#fafafc","color":"#656760"}, 1300);
-            $(".article").fadeOut(400);
-            $(".article").html("");                    
+            $(".article").fadeOut(400).html("");              
         });
         </script>
     </body>
