@@ -94,13 +94,15 @@
             </div>
         </section>
         <script>
-        $(".button").click(function() {
+        $(".button").click(function(e) {
+            $(".article").load($(e).parents(".thumb").data("source"));
           $(".toolbar").stop().animate({"backgroundColor":"#656760","color":"#fafafc"}, 1000);
           $(".article").fadeIn(300);                    
         });
         $(".button-close").click(function() {
           $(".toolbar").stop().animate({"backgroundColor":"#fafafc","color":"#656760"}, 1300);
-          $(".article").fadeOut(400);                    
+          $(".article").fadeOut(400);
+          $(".article").html("");                    
         });
         </script>
     </body>
