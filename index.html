@@ -5,6 +5,7 @@
         <link href="https://fonts.googleapis.com/css?family=Asap:400,500,700|Varela+Round" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link rel="jquery" href="scripts.js">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     </head>
     
@@ -81,15 +82,5 @@
 
             </div>
         </section>
-        <script>
-        $(".button").click(function(e) {
-             $(".article").fadeIn(300).load($(e).parents(".thumb").data("source")); //tuki je ta del za klicanje
-             $(".toolbar").stop().animate({"backgroundColor":"#656760","color":"#fafafc"}, 1000);                
-        });
-        $(".button-close").click(function() {
-            $(".toolbar").stop().animate({"backgroundColor":"#fafafc","color":"#656760"}, 1300);
-            $(".article").fadeOut(400).html("");              
-        });
-        </script>
     </body>
 </html>
