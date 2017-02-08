@@ -1,96 +1,104 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Asap:400,500,700|Varela+Round" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-        <!--<script src="scripts.js"></script>-->
-    	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    </head>
-    
-    <body>
-        <header>
-            <div class="toolbar">
-                <h1 class="title">Randomz Experiments</h1>
-                <div class="menu">
-                    <div class="menu element">First</div>
-                    <div class="menu element">Second</div>
-                    <div class="menu element">Third</div>
-                </div>
+<head>
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Asap:400,500,700|Varela+Round" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+	<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet"><!--<script src="scripts.js"></script>-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+	</script>
+	<title></title>
+</head>
+<body>
+	<header>
+		<div class="toolbar">
+			<div class="title">
+				Randomz Experiments
+			</div>
+			<div class="search">
+				Search the site
+			</div>
+			<div class="menu">
+				<div class="menu element">First</div>
+				<div class="menu element">Second</div>
+				<div class="menu element">Third</div>
+			</div>
+		</div>
+	</header>
+	<section>
+
+		<div class="thumb" data-source="sample.html">
+            <div class="tags">
+                <p>Android</p>
+                <p>RecicleView</p>
+                <p>Tutorial</p>
+                <p>Android Studio</p>
             </div>
-        </header>
-        <section>
-		    <div class="thumb" data-source="sample.html" > <!--un k se ga klice-->
-		    	<div class="thumb-top-bg">
-		    		<p class="thumb-heading">Salad, You So Fun</p>
-				</div>
-	    	    <div class="thumb-desc">
-    			    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
-                     <a href="#"><div class="button">Read More</div></a>
-                  </p>
-			    </div>
-             </div>
-		            	<div class="thumb">
-		            		<div class="thumb-top-bg">
-		            			<p class="thumb-heading">Salad, You So Fun</p>
-		            		</div>
-	            		    <div class="thumb-desc">
-            				    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
-                                <a href="#"><div class="button">Read More</div></a>
-                                </p>
-	            		    </div>
-                        </div>
+				<p class="thumb-heading">Expandable RecyclerView tutorial</p>
+            <a href="#"><button class="button">Read more ➝</button></a>
+		</div>
 
-                        <div class="thumb">
-		            		<div class="thumb-top-bg">
-		            			<p class="thumb-heading">Salad, You So Fun</p>
-		            		</div>
-	            		    <div class="thumb-desc">
-            				    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
-                                <a href="#"><div class="button">Read More</div></a>
-                                </p>
-	            		    </div>
-                        </div>
-
-                        <div class="thumb">
-		            		<div class="thumb-top-bg">
-		            			<p class="thumb-heading">Salad, You So Fun</p>
-		            		</div>
-	            		    <div class="thumb-desc">
-            				    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
-                                <a href="#"><div class="button">Read More</div></a>
-                                </p>
-	            		    </div>
-                        </div>
-
-                        <div class="thumb">
-		            		<div class="thumb-top-bg">
-		            			<p class="thumb-heading">Salad, You So Fun</p>
-		            		</div>
-	            		    <div class="thumb-desc">
-            				    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
-                                <a href="#"><div class="button">Read More</div></a>
-                                </p>
-	            		    </div>
-                        </div>
-        </section>
-
-        <section>
-            <div class="article">
-                <div class="button-close">Close</div>
+        <div class="thumb" data-source="sample.html">
+            <div class="tags">
+                <p>Android</p>
+                <p>RecicleView</p>
+                <p>Tutorial</p>
+                <p>Android Studio</p>
             </div>
-        </section>
-        <script>
-            $(".button").click(function(e) {
-                $(".article").fadeIn(300);//.load($(e).parents(".thumb").data("source"); //tuki je ta del za klicanje
-                $(".toolbar").stop().animate({"backgroundColor":"#656760","color":"#fafafc"}, 1000);               
-            });
+				<p class="thumb-heading">Firebase RecyclerView with Firebase Database and Storage</p>
+            <a href="#"><button class="button">Read more ➝</button></a>
+		</div>
 
-            $(".button-close").click(function() {
-                $(".toolbar").stop().animate({"backgroundColor":"#fafafc","color":"#656760"}, 1300);
-                $(".article").fadeOut(400);              
-            });
-        </script>
-    </body>
+        <div class="thumb" data-source="sample.html">
+            <div class="tags">
+                <p>Android</p>
+                <p>RecicleView</p>
+                <p>Tutorial</p>
+                <p>Android Studio</p>
+            </div>
+				<p class="thumb-heading">How to: Create A Carousel in a RecyclerView</p>
+            <a href="#"><button class="button">Read more ➝</button></a>
+		</div>
+
+
+	</section>
+	<section>
+		<div class="article">
+			<div class="button-close">
+				Close
+			</div>
+		</div>
+	</section>
+	<script>
+
+        var colors = [
+            '#2f935b', //green
+            '#2f7193', //blue
+            '#932f49'  //red
+            ];   
+
+        $( document ).ready(function() {
+            $(".thumb").show(assignColors);
+        });
+
+        function assignColors(){
+            delete assignedC;
+            var assignedC = colors[Math.floor(Math.random() * colors.length)];
+            $(".thumb").animate({"backgroundColor":assignedC}, 1);
+        };
+
+
+        $(".button").click(function(e) {
+            $(".article").fadeIn(300);//.load($(e).parents(".thumb").data("source")); //tuki je ta del za klicanje
+            $(".toolbar").stop().animate({"backgroundColor":"#656760","color":"#fafafc"}, 1000);               
+        });
+
+        $(".button-close").click(function() {
+            $(".toolbar").stop().animate({"backgroundColor":"#fafafc","color":"#656760"}, 1300);
+            $(".article").fadeOut(400);              
+        });
+	</script>
+</body>
 </html>
