@@ -1,5 +1,5 @@
-$(".button").click(function(e) {
-    $(".article").fadeIn(300).load($(e).parents(".thumb").data("source")); //tuki je ta del za klicanje
+$(".button").click(function(klic) {
+    $(".article").fadeIn(300).load($(klic).parents(".thumb").data("source")); //tuki je ta del za klicanje
     $(".toolbar").stop().animate({"backgroundColor":"#656760","color":"#fafafc"}, 1000);               
 });
 
