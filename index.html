@@ -85,13 +85,12 @@
 
         function assignColors(){
             delete assignedC;
-            var assignedC = colors[Math.floor(Math.random() * colors.length)];
             $(".thumb").each(function(){
-                 $(this).animate({"backgroundColor":assignedC}, 1);
+                 $(this).animate({"backgroundColor":colors[Math.floor(Math.random() * colors.length)]}, 1);
         });};
 
         $(".button").click(function(e) {
-            $(".article").fadeIn(300);//.load($(e).parents(".thumb").data("source")); //tuki je ta del za klicanje
+            $(".article").fadeIn(300).load($(e.target).parents(".thumb").data("source"));
             $(".toolbar").stop().animate({"backgroundColor":"#656760","color":"#fafafc"}, 1000);               
         });
 
