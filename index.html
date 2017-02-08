@@ -84,7 +84,6 @@
         });
 
         function assignColors(){
-            delete assignedC;
             $(".thumb").each(function(){
                  $(this).animate({"backgroundColor":colors[Math.floor(Math.random() * colors.length)]}, 1);
         });};
