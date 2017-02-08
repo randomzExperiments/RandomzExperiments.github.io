@@ -1,9 +1,9 @@
-$(".button").click(function(klic) {
-    $(".article").fadeIn(300).load($(klic).parents(".thumb").data("source")); //tuki je ta del za klicanje
+$(".button").click(function(e) {
+    $(".article").fadeIn(300); //tuki je ta del za klicanje
     $(".toolbar").stop().animate({"backgroundColor":"#656760","color":"#fafafc"}, 1000);               
 });
 
 $(".button-close").click(function() {
     $(".toolbar").stop().animate({"backgroundColor":"#fafafc","color":"#656760"}, 1300);
-   // $(".article").fadeOut(400).html("");              
+    $(".article").fadeOut(400);              
 });
