@@ -52,7 +52,7 @@ h1.title {
     background: #fff;
     width: 210px;
     height: 250px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
     padding: 20px;
     margin: 15px 15px 60px 15px;
@@ -134,7 +134,7 @@ h1.title {
     text-align: center;
     padding: 8px 15px;
     box-shadow: 0 1px 7px 0 rgba(0,0,0,0.6);
-    border-radius: 3px;
+    border-radius: 23px;
 }
 
 section {
@@ -166,7 +166,7 @@ p.thumb-heading {
 }
 
 .thumb:hover {
-    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 7px 22px 0 rgba(0,0,0,0.2);
 }
 
 .article-contents {
