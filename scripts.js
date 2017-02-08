@@ -5,5 +5,5 @@ $(".button").click(function(e) {
 
 $(".button-close").click(function() {
     $(".toolbar").stop().animate({"backgroundColor":"#fafafc","color":"#656760"}, 1300);
-    $(".article").fadeOut(400).html("");              
+   // $(".article").fadeOut(400).html("");              
 });
