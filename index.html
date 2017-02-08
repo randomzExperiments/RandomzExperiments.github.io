@@ -32,7 +32,7 @@
 		<div class="thumb" data-source="sample.html">
             <div class="tags">
                 <p>Android</p>
-                <p>RecicleView</p>
+                <p>RecyclerView</p>
                 <p>Tutorial</p>
                 <p>Android Studio</p>
             </div>
@@ -43,7 +43,7 @@
         <div class="thumb" data-source="sample.html">
             <div class="tags">
                 <p>Android</p>
-                <p>RecicleView</p>
+                <p>RecyclerView</p>
                 <p>Tutorial</p>
                 <p>Android Studio</p>
             </div>
@@ -54,7 +54,7 @@
         <div class="thumb" data-source="sample.html">
             <div class="tags">
                 <p>Android</p>
-                <p>RecicleView</p>
+                <p>RecyclerView</p>
                 <p>Tutorial</p>
                 <p>Android Studio</p>
             </div>
@@ -86,9 +86,9 @@
         function assignColors(){
             delete assignedC;
             var assignedC = colors[Math.floor(Math.random() * colors.length)];
-            $(".thumb").animate({"backgroundColor":assignedC}, 1);
-        };
-
+            $(".thumb").each(function(){
+                 $(this).animate({"backgroundColor":assignedC}, 1);
+        });};
 
         $(".button").click(function(e) {
             $(".article").fadeIn(300);//.load($(e).parents(".thumb").data("source")); //tuki je ta del za klicanje
