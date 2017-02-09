@@ -220,3 +220,58 @@ p.thumb-heading {
     background: #414141;
     color: #fff;
 }
+
+.thumb.big {
+    background: #adadad;
+    width: 500px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.1);
+    margin: 15px 15px 60px 15px;
+    position: relative;
+    transition: all 300ms;
+    display: inline-block;
+}
+
+.hero-img {
+    width: 200px;
+    height: 100%;
+    float: left;
+    background: #545454;
+    overflow: hidden;
+    border-radius: 7px 0 0 7px;
+}
+.thumb.big .tags {
+    color: rgba(255, 255, 255, 0.66);
+    text-transform: uppercase;
+    font-size: 12px;
+    position: absolute;
+    text-align: left;
+    width: 277px;
+    right: 0;
+    max-height: 12px;
+    margin: 20px 0 0 20px;
+    transition: all 300ms ease-in;
+    background-clip: content-box;
+    overflow: hidden;
+}
+.hero-img img {
+    height: 300px;
+    animation: load 2s;
+}
+
+@keyframes load {
+  0% {
+     opacity: 0;
+     filter: grayscale(100%) brightness(200%);
+     border-radius: 7px 0 0 7px;
+  }
+  50%{
+      opacity: 0,2;
+  }
+  100% {
+     opacity: 1;
+     filter: grayscale(0%) brightness(100%);
+     border-radius: 7px 0 0 7px;
+  }
+}
